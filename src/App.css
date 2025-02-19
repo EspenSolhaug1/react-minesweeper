@@ -3,10 +3,14 @@
 }
 .cell {
   background-color: silver;
+  height: 40px;
+  width: 40px;
+  margin: 1px;
 }
 .symbol {
   color: white;
   text-align: center;
+
   font-size: 5;
 }
 .container {
@@ -17,7 +21,13 @@
   margin-top: 20px;
 
   display: grid;
-  grid-template-columns: repeat(10, 30px);
+  grid-template-columns: repeat(10, 40px);
   grid-auto-rows: 30px; /* sets height */
-  gap: 10px; /* gap between cells */
+  gap: 1px; /* gap between cells */
+  text-align: center;
+  line-height: 40px;
+}
+
+.cell:hover {
+  background-color: ivory !important;
 }
